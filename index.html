@@ -1,0 +1,72 @@
+<html lang="pt-br">
+   
+    <head>
+        <link rel="stylesheet" type="text/css" href="STYLE.CSS">
+        <title>Iago Caetano</title>
+        <meta name="sobre mim" content="sobre mim, Iago, coisas sobre mim, curiosidades, minha história ">
+    </head>
+    <body>
+        <!-- COMO VISTO JA DEVE ESTAR CLARO QUE A ESTÉTICA DO SITE É BASEADA EM VIDEO GAMES, ASSIM
+        USEI ESSA CLASSE ABAS PARA IMITAR UM MENU DE JOGO, ASSIM ELE CRIA UM EFEITO DE DESTAQUE PARA A 
+        OPÇÃO SELECIONADA-->
+        <div class="abas">
+            <h1>Iago Caetano</h1>
+            <br>
+            <br>
+            <a href="materias.html">MATÉRIAS EM ANDAMENTO</a>
+            <br>
+            <br>
+            <a href="sobre.html">SOBRE</a>
+            <br>
+            <br>
+            <a href="contatos.html">CONTATOS</a>
+            <br>
+            <br>
+            </div>
+            <!--AQUI USEI DUAS DIVS PARA ALINHAR OS MEUS CARTÕES DE MANEIRA QUE PAREÇA UMA LISTA DE CONQUISTAS DE JOGOS,
+            USEI O MESMO MODELO DAS DIVS PARA FAZER OS CARDS DA ABA MATÉRIAS EM ANDAMENTO, COM PEQUENOS AJUSTES É CLARO-->
+        <div id="div1">
+        <div id="conteudo1">
+            <p class="p1">Bacharel em Direito</p>
+            <p class="p2">Formado em Direito pela Anhanguera/Kroton desde de 2018.</p>
+        </div>
+        <div id="conteudo2">
+            <p class="p1">2° Periodo de Engenharia de Software</p>
+            <p class="p2">Atualmente cursando Engenharia de Software pela Universidade de Vassouras.</p>
+        </div>
+        </div>
+        <div id="div2">
+        <div id="conteudo3">
+            <p class="p1">Inglês Avançado</p>
+            <p class="p2">Falo Inglês no nível avançado, 3 anos cursados pelo IEBEU e a vida toda com jogando games em inglês.</p>
+         </div>
+         <div id="conteudo4">
+            <p class="p1">Experiencias Anteriores</p>
+            <p class="p2">Estagiei 2 anos completos no TJRJ / Trabalhei 6 meses como auxiliar administrativo numa Transportadora 
+                / atualemnte estagio na DMS Logistics desde 2022</p>
+        </div>
+        </div>
+        <!--AQUI TEMOS U SCRPIT EM JS PARA MUDANÇA DE PÁGINAS DE MANEIRA MAIS FLUÍDA, TALVEZ PELO SITE SER ESCURO O EFEITO
+        NÃO FICOU DO JETIO QUE EU QUERIA EXATAMENTE-->
+        <script>
+            document.querySelectorAll('menu').forEach(link => {
+                link.onclick = function(e) {
+                    e.preventDefault()
+                    const flex = document.getElementsByClassName("menu")
+                    fetch(link.href)
+                    .then(resp => resp.text())
+                    .then(html => menu.innerHTML = html)
+                }
+            })
+        </script>
+
+        <!--NO FOOTER EU DECIDI SER BEM MINIMALISTA RESPEITANDO O DESENHO ORIGINAL DO SITE-->
+        <footer>
+            <p>Rua da Torre, LT 8, Alvorada, Saquarema, Rio de Janeiro/ CEP: 28995-844</p>
+            <p>Todos os direitoss resrvados a mim, é claro, baseado em fontes da minha cabeça.</p>
+            <a href="https://www.instagram.com/iagos.caetano/">
+                <img id="contatinho" src="instagram icon 3.png">
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" type="text/css" href="STYLE.CSS">
+        <title>Matérias em Andamento</title>
+        <meta name="Matérias em Andamento" content="Matérias, Universade de Vassouras, Professores">
+       
+        
+    </head>
+    <div class="abas">
+        <h1>Iago Caetano</h1>
+        <a href="index.html">INÍCIO</a>
+        <br>
+        <br>
+        <a href="sobre.html">SOBRE</a>
+        <br>
+        <br>
+        <a href="contatos.html">CONTATOS</a>
+        <br>
+        <br>
+        </div>
+       <!--AQUI AS DIVS SÃO USADAS DA MESMA MANEIRA QUE NA ABA INÍCIO/INDEX, COM ALGUM AJUSTES, AS IDS DA DIVS SÃO
+        SÃO COM O FINAL HOO POIS LEVAVAM O NOME DE HOBBIE, SERIA DE UMA PARTE DO TRABALHO EM QUE EU FALARIA SOBRE MEUS
+        HOOBIES, NO ENTANTO TAL IDEIA FOI ABANDONADA AFM DE PRESERVAR A SAUDE ESTRUTUAL DO SITE-->
+        <div id="div1">
+            <div id="conteudohoo1">
+                <p class="p1"> ENGENHARIA DE REQUESITO E ANALISE DE SISTEMAS</p>
+                <p class="p2"> AULA MINISTRADA PELO PROFESSOR GIOLIANO BERTONI NA UNIVERSIDADE DE VASSOURAS NO POLO DE SAQUAREMA/RJ
+                    AS SEGUNDAS FEIRAS DE 19:00 AS 22:15 HRS.
+                </p>
+            </div>
+            <div id="conteudohoo2">
+                <p class="p1">GESTÃO EMPRESARIAL</p>
+                <p class="p2">MINISTRADA PELO PROFESSOR DOUGLAS RODRIGUES VIA TEAMS AS TERÇAS DE 19:00 AS 22:15.</p>
+            </div>
+            </div>
+            <div id="div2">
+            <div id="conteudohoo3">
+                <p class="p1">ÉTICA, CIDADANIA E SOCIEDADE</p>
+                <p class="p2">MINISTRADA PELO PROFESSOR JOÃO COELHO A VIA TEAMS AS QUARTAS FEIRAS DE 20:30 AS 22:15</p>
+             </div>
+             <div id="conteudohoo4">
+                <p class="p1">ALGORITIMOS</p>
+                <p class="p2">MINISTRADA PELO PROFESSOR GIOLIANO BERTONI NA UNIVERIDADE DE VASSOURAS NO POLO DE SAQUAREMA/RJ
+                    AS SEGUNDAS FEIRAS DE 19:00 AS 22:15.</p>
+            </div>
+            </div>
+            <div id="div3">
+                <div id="conteudohoo5">
+                <p class="p1">PÁTRICAS EXTENSIONISTAS II</p>
+                <p class="p2">MINISTRADA PELO PROFESSOR JOÃO COELHO VIA TEAMS AOS SÁBADOS DE 09:00 AO 12:00</p>
+                 </div>
+                 <div id="conteudohoo6">
+                    <p class="p1">PRÁTICA DE LEITURA E PRODUÇÃO TEXTUAL</p>
+                    <p class="p2">MINISTRADA PELO PROFESSOR LUCIANO VIA TEAMS AS QUARTA FEIRAS DE 19:00 AS 20:30 </p>
+                </div>
+                </div>
+                <div id="div4">
+                    <div id="conteudohoo7">
+                <p class="p1">LABORATÓRIA WEB</p>
+                <p class="p2">MINISTRADA PELO ÚNICO E INCRÍVEL PROFESSOR ANDRÉ SARAIVA NA UNIVERIDADE DE VASSOURAS NO POLO
+                            DE SAQUAREMA/RJ AS SEXTAS FEIRAS DE 19:00 AS 22:15.</p>
+                    </div>
+                </div>
+                <script>
+                    document.querySelectorAll('menu').forEach(link => {
+                        link.onclick = function(e) {
+                            e.preventDefault()
+                            const flex = document.getElementsByClassName("menu")
+                            fetch(link.href)
+                            .then(resp => resp.text())
+                            .then(html => menu.innerHTML = html)
+                        }
+                    })
+                </script>
+
+
+            <footer>
+                <p>Rua da Torre, LT 8, Alvorada, Saquarema, Rio de Janeiro/ CEP: 28995-844</p>
+                <p>Todos os direitoss resrvados a mim, é claro, baseado em fontes da minha cabeça.</p>
+                <a href="https://www.instagram.com/iagos.caetano/">
+                <img id="contatinho" src="instagram icon 3.png">
+            </footer>
+            
+        </body>
+    </html> 

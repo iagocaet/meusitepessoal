@@ -1,0 +1,68 @@
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" type="text/css" href="STYLE.CSS">
+        <title>Sobre</title>
+        <meta name="Sobre" content="Sobre, sobre mim, minha história">
+        
+    </head>
+    <body>
+        <div class="abas">
+            <h1>Iago Caetano</h1>
+            <a href="index.html">INÍCIO</a>
+            <br>
+            <br>
+            <a href="materias.html">MATÉRIAS EM ANDAMENTO</a>
+            <br>
+            <br>
+            <a href="contatos.html">CONTATOS</a>
+            <br>
+            <br>
+            </div>
+            <!--AQUI EU UTILIZEI APENAS UMA DIV, RETIREI AS BORDAS E DEMINUÍ O GRAFISMO DE JOGOS, AFIM DE DEIXAR UMA PARTE
+            MAIS "SÉRIA" DO SITE-->
+        <div id="div1">
+        <div id="conteudohis">
+            <p class="p1">SOBRE MIM</p>
+            <p class="p2">eu nasci em saquarema, no ano de 1995, filho de Alice Moraes da Silva e Francisco Souza Caetano 
+                estudei o ensino fundamental quase todo no Colégio cenecista , lugar no qual eu fiz amigos que levo até hoje.
+                já no ensino médio eu fiz parte do corpo docente do Colégio Estadual Oscar de Macedo Soares, assim possibilitando
+                entrar na Faculdade de Direito em 2014 através do Prouni.
+                Cursei 5 anos de Direito em Niterói, apesar de ter que acordar as 4 da manhã todos os dias eu nunca desanimei, pois
+                tinha convicção de o esforço me renderia algum fruto futuro. Bom, não rendeu ainda, mas segui minha vida, consegui 
+                trabalhar na Overblack e na Bywer no cargo de assistente administrativo, mais específicamente na Bywer eu trabalhava junto
+                a logística da empresa, apesar de ficar pouco tempo eu aprendi bastente a dinâmica do mercado de logística.
+                Assim que eu larguei o emprego um amigo meu me incentivou a estudar programação e aos poucos fui apreendendo em casa
+                a programar. Em 2022, surgiu a oportunidade de fazer um Curso de Engenharia de Software através do COUNI(conexão 
+                universitária), um programa em que a prefeitura do município de saquarema financia a seu ingresso em uma universidade.
+                Desde então eu estou no 2° período de Engenharia de Software, e essa oportunidade começou a dar frutos quando eu consegui
+                ser efetivado estagiário interno da DMS Logistics.
+                Primeiramente eu tenho que agradecer aos meus pais por todo apoio, em segundo plano, meus professores e a Universidade 
+                de vassouras que sempre deram todo suporte e incentivo necessário e por último a Prefeitura de Saquarema que me deu essa
+                oportunidade para seguir um novo caminho e ajudar a consolidar o nome da minha cidade natal como uma cidade do futuro.
+            </p>
+        </div>
+       <br>
+
+       <script>
+        document.querySelectorAll('menu').forEach(link => {
+            link.onclick = function(e) {
+                e.preventDefault()
+                const flex = document.getElementsByClassName("menu")
+                fetch(link.href)
+                .then(resp => resp.text())
+                .then(html => menu.innerHTML = html)
+            }
+        })
+    </script>
+        
+        <footer>
+            <p>Rua da Torre, LT 8, Alvorada, Saquarema, Rio de Janeiro/ CEP: 28995-844</p>
+            <p>Todos os direitoss resrvados a mim, é claro, baseado em fontes da minha cabeça.</p>
+            <a href="https://www.instagram.com/iagos.caetano/">
+                <img id="contatinho" src="instagram icon 3.png">
+        </footer>
+
+
+        
+    </body>
+</html>
